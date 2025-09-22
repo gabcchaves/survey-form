@@ -1,0 +1,40 @@
+body {
+	background-color: linen;
+	font-family: sans-serif;
+}
+
+#title {
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+#description {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+#title, #description {
+	text-align: center;
+}
+
+#survey-form {
+	max-width: 500px;
+	margin: 0 auto;
+	min-height: 60vh;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	align-items: space-between;
+	justify-content: space-between;
+}
+
+input, select, button {
+	padding: 10px 5px;
+}
+
+label {
+	margin-top: 10px;
+}
