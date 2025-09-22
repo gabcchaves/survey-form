@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frontend Workshop Sign Up</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">FrontEnd Workshop (Fictitious)</h1>
+        <p id="description">Workshop about frontend web development.</p>
+        <form id="survey-form" method="POST">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="Enter your e-mail address" required>
+
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" min="13" max="120" placeholder="Your age" required>
+			
+			<label for="dropdown">Which stack are you familiar with?</label>
+			<select id="dropdown" name="stack">
+				<option value="0">Select</option>
+				<option value="1">Front End</option>
+				<option value="2">Back End</option>
+				<option value="3">Full Stack</option>
+				<option value="4">None</option>
+			</select>
+
+			<label>Do you have a job on web development?</label>
+			<label>
+				<input type="radio" name="hired" value="yes" checked>Yes
+				<input type="radio" name="hired" value="no">No
+			</label>
+
+			<label>Which day of the week will be able to attend the worshop?
+				<input type="checkbox" value="Monday">
+				<input type="checkbox" value="Wednesday">
+			</label>
+
+			<label for="comment">If you got any question or comments about the workshop, write it down in the following text area.</label>
+			<textarea id="comment" rows="3" cols="30"></textarea>
+			<button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
